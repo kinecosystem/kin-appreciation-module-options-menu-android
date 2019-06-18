@@ -1,0 +1,12 @@
+<resources>
+    <string name="kingifting_first_option">FIRST</string>
+    <string name="kingifting_second_option">SECOND</string>
+    <string name="kingifting_third_option">THIRD</string>
+    <string name="kingifting_fourth_option">FOURTH</string>
+    <string name="kingifting_gift_with_kin">Gift with Kin</string>
+    <string name="kingifting_thank_you">Thank you!</string>
+    <string name="kingifting_love_it">Love it</string>
+    <string name="kingifting_you_rule">You rule</string>
+    <string name="kingifting_amazing_stuff">Amazing stuff</string>
+    <string name="kingifting_you_made_my_day">You made my day</string>
+</resources>

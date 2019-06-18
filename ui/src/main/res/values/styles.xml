@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="KinGiftingDialogBase.Light" parent="KinEcosystem.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@color/kinecosystem_transparent</item>
+        <item name="android:windowAnimationStyle">@style/KinGifting_DialogAnimation</item>
+    </style>
+
+    <style name="KinGiftingDialogBase.Dark" parent="KinEcosystem.Dark">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@color/kinecosystem_transparent</item>
+        <item name="android:windowAnimationStyle">@style/KinGifting_DialogAnimation</item>
+    </style>
+
+    <style name="KinGiftingDialog.Light" parent="KinGiftingDialogBase.Light">
+        <item name="dialogBackground">@drawable/kingifting_dialog_background_light</item>
+        <item name="buttonStrokeFrame">@drawable/kingifting_button_frame_stroke_light</item>
+        <item name="disabledColor">@color/kingifting_disabled_light</item>
+    </style>
+
+    <style name="KinGiftingDialog.Dark" parent="KinGiftingDialogBase.Dark">
+        <item name="dialogBackground">@drawable/kingifting_dialog_background_dark</item>
+        <item name="buttonStrokeFrame">@drawable/kingifting_button_frame_stroke_dark</item>
+        <item name="disabledColor">@color/kingifting_disabled_dark</item>
+    </style>
+
+    <style name="KinGifting_DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/kingifting_slide_in_top</item>
+        <item name="android:windowExitAnimation">@anim/kingifting_slide_out_down</item>
+    </style>
+
+    <style name="KinGiftingBalanceText">
+        <item name="android:textSize">@dimen/kinecosystem_title_size</item>
+        <item name="android:textColor">@color/kinecosystem_primary</item>
+    </style>
+
+</resources>

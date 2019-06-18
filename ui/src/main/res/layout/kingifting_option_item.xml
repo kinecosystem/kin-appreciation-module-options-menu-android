@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/kinecosystem_round_button_width"
+    android:layout_height="@dimen/kinecosystem_round_button_height"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:animateLayoutChanges="true"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/confetti"
+        android:layout_width="@dimen/kingifting_confetti_width"
+        android:layout_height="@dimen/kingifting_confetti_height"
+        app:srcCompat="@drawable/kingifting_confetti_thank_you"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        tools:ignore="ContentDescription"/>
+
+    <ImageView
+        android:id="@+id/item_background"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/kinecosystem_round_button_height"
+        android:background="@drawable/kingifting_option_selected_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+
+    <com.kin.ecosystem.base.widget.KinEcosystemTextView
+        android:id="@+id/text"
+        android:layout_width="@dimen/kinecosystem_round_button_width"
+        android:layout_height="@dimen/kinecosystem_round_button_height"
+        android:textSize="@dimen/kinecosystem_sub_title_size"
+        android:textColor="@color/kinecosystem_subtitle_gray_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:background="?attr/buttonStrokeFrame"
+        tools:text="Love it" />
+
+
+    <ImageView
+        android:id="@+id/kin_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/amount"
+        app:layout_constraintEnd_toStartOf="@id/amount"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="@id/amount"
+        app:srcCompat="@drawable/kingifting_ic_kin_logo_green" />
+
+
+    <com.kin.ecosystem.base.widget.KinEcosystemTextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/kinecosystem_main_margin"
+        android:textColor="@color/kinecosystem_green"
+        android:textSize="@dimen/kinecosystem_title_medium_size"
+        app:layout_constraintBottom_toBottomOf="@id/text"
+        app:layout_constraintEnd_toEndOf="@id/text"
+        app:layout_constraintTop_toTopOf="@id/text"
+        tools:text="50" />
+
+
+</android.support.constraint.ConstraintLayout>

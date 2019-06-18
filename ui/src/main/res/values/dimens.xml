@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="kingifting_background_corner_radius">10dp</dimen>
+    <dimen name="kingifting_confetti_width">360dp</dimen>
+    <dimen name="kingifting_confetti_height">89dp</dimen>
+</resources>

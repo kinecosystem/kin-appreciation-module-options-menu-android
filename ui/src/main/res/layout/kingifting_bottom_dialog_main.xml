@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screen_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:background="?attr/dialogBackground"
+    tools:background="@color/kinecosystem_white">
+
+    <ImageView
+        android:id="@+id/close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/kinecosystem_main_margin"
+        android:layout_marginTop="@dimen/kinecosystem_main_medium_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kinecosystem_ic_close_new" />
+
+    <ImageView
+        android:id="@+id/kin_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        app:layout_constraintBottom_toBottomOf="@id/balance_text"
+        app:layout_constraintEnd_toStartOf="@id/balance_text"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/balance_text"
+        app:srcCompat="@drawable/kingifting_ic_kin_logo_primary" />
+
+    <TextSwitcher
+        android:id="@+id/balance_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inAnimation="@anim/kingifting_slide_fade_from_top"
+        android:measureAllChildren="false"
+        android:outAnimation="@anim/kingifting_slide_fade_to_bottom"
+        app:layout_constraintBottom_toBottomOf="@id/close_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/kin_logo"
+        app:layout_constraintTop_toTopOf="@id/close_btn" />
+
+
+    <com.kin.ecosystem.base.widget.KinEcosystemTextView
+        android:id="@+id/title"
+        style="@style/KinecosysTitleMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/kinecosystem_main_small_margin"
+        android:text="@string/kingifting_gift_with_kin"
+        app:fontExtra="medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/balance_text" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/options_guideline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <org.kin.ecosystem.appreciation.options.menu.ui.GiftOptionView
+        android:id="@+id/option_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/kinecosystem_main_medium_margin"
+        android:tag="@string/kingifting_first_option"
+        app:layout_constraintBottom_toTopOf="@id/option_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/options_guideline" />
+
+    <org.kin.ecosystem.appreciation.options.menu.ui.GiftOptionView
+        android:id="@+id/option_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/kinecosystem_main_medium_margin"
+        android:tag="@string/kingifting_second_option"
+        app:layout_constraintBottom_toTopOf="@id/option_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/option_1" />
+
+    <org.kin.ecosystem.appreciation.options.menu.ui.GiftOptionView
+        android:id="@+id/option_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/kinecosystem_main_medium_margin"
+        android:tag="@string/kingifting_third_option"
+        app:layout_constraintBottom_toTopOf="@id/option_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/option_2" />
+
+    <org.kin.ecosystem.appreciation.options.menu.ui.GiftOptionView
+        android:id="@+id/option_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="@string/kingifting_fourth_option"
+        android:layout_marginTop="@dimen/kinecosystem_main_medium_margin"
+        android:layout_marginBottom="@dimen/kinecosystem_margin_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/option_3" />
+
+</android.support.constraint.ConstraintLayout>

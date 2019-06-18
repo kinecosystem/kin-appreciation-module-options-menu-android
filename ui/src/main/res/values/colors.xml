@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="kingifting_button_stroke_light">#dedede</color>
+    <color name="kingifting_button_stroke_dark">#636363</color>
+
+    <color name="kingifting_disabled_light">@color/kingifting_button_stroke_light</color>
+    <color name="kingifting_disabled_dark">#333333</color>
+
+</resources>

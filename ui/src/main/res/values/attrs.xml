@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="KinGiftingTheme">
+        <attr format="reference" name="dialogBackground"/>
+        <attr format="reference" name="buttonStrokeFrame"/>
+        <attr format="color" name="disabledColor"/>
+    </declare-styleable>
+
+    <declare-styleable name="GiftOptionView">
+        <attr format="string" name="amount"/>
+        <attr format="string" name="text"/>
+    </declare-styleable>
+
+</resources>
