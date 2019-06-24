@@ -1,0 +1,23 @@
+ext {
+    bintrayRepo = 'Kin-Appreciation' // Repo name in Bintray
+    bintrayUserOrg = 'kinecosystem'
+    bintrayName = "${GROUP_NAME}.${MODULE_ARTIFACT_ID}" // Package name in Bintray repo
+
+    publishedGroupId = GROUP_NAME
+    artifact = MODULE_ARTIFACT_ID
+    libraryDescription = MODULE_DESCRIPTION
+    siteUrl = 'https://github.com/kinecosystem/kin-appreciation-module-options-menu-android'
+    gitUrl = 'https://github.com/kinecosystem/kin-appreciation-module-options-menu-android.git'
+    libraryVersion = VERSION_NAME
+
+    developerId = 'kinecosystem'
+    developerName = 'KinEcosystem'
+
+    licenseName = 'MIT License'
+    licenseUrl = 'https://github.com/kinecosystem/kin-appreciation-module-options-menu-android/blob/master/LICENSE.md'
+    allLicenses = ["MIT"]
+}
+
+apply from: rootProject.file('gradle/release_maven.gradle')
+
+apply from: rootProject.file('gradle/release_bintray.gradle')

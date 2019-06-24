@@ -16,8 +16,8 @@ import android.text.style.ForegroundColorSpan
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
-import android.view.animation.AccelerateInterpolator
 import android.view.animation.AlphaAnimation
+import android.view.animation.AnticipateInterpolator
 import android.view.animation.AnticipateOvershootInterpolator
 import android.widget.ImageView
 import android.widget.TextView
@@ -88,7 +88,7 @@ internal class GiftOptionView @JvmOverloads constructor(context: Context,
 		val textWidth = Paint().measureText(thankYouText)
 		ValueAnimator.ofInt(0, titleView.width).apply {
 			duration = ANIM_DURATION_SLIDE_LOAD
-			interpolator = AccelerateInterpolator()
+			interpolator = AnticipateInterpolator()
 			addUpdateListener { valueAnimator ->
 				val newWidth = valueAnimator.animatedValue as Int
 				val params = itemBackgroundView.layoutParams

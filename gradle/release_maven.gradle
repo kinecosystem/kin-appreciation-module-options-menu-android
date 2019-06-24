@@ -1,0 +1,41 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+version = VERSION_NAME
+group = GROUP_NAME
+// Set the .aar base file name to match the module artifact id
+project.archivesBaseName = MODULE_ARTIFACT_ID
+install {
+    repositories.mavenInstaller {
+        // This generates POM.xml with proper parameters
+        pom {
+            project {
+                packaging 'aar'
+                groupId publishedGroupId
+                artifactId MODULE_ARTIFACT_ID
+
+                name MODULE_NAME
+                description libraryDescription
+                url siteUrl
+
+                licenses {
+                    license {
+                        name licenseName
+                        url licenseUrl
+                    }
+                }
+                developers {
+                    developer {
+                        id developerId
+                        name developerName
+                    }
+                }
+                scm {
+                    connection gitUrl
+                    developerConnection gitUrl
+                    url siteUrl
+
+                }
+            }
+        }
+    }
+}
