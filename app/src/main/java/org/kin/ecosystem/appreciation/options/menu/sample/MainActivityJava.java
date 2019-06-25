@@ -25,7 +25,7 @@ public class MainActivityJava extends AppCompatActivity {
         }
 
         @Override
-        public void onItemSelected(int itemIndex, @NotNull String amount) {
+        public void onItemSelected(int itemIndex, int amount) {
             showToast("onItemSelected -> index: " + itemIndex + " amount: " + amount);
         }
 

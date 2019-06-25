@@ -44,7 +44,7 @@ internal class GiftingPresenterImpl(private var balance: Long,
 				}
 			}
 		}
-		eventsListener?.onItemSelected(itemIndex.ordinal, optionsMap[itemIndex].toString())
+		eventsListener?.onItemSelected(itemIndex.ordinal, optionsMap.getValue(itemIndex).amount)
 	}
 
 	override fun onSliderCompleted() {
