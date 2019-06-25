@@ -17,7 +17,7 @@ class MainActivityKotlin : AppCompatActivity() {
             showToast("Dialog opened")
         }
 
-        override fun onItemSelected(itemIndex: Int, amount: String) {
+        override fun onItemSelected(itemIndex: Int, amount: Int) {
             showToast("onItemSelected -> index: $itemIndex amount: $amount")
         }
 

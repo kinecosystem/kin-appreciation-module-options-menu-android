@@ -4,7 +4,7 @@ interface EventsListener {
 
 	fun onDialogOpened()
 
-	fun onItemSelected(itemIndex: Int, amount: String)
+	fun onItemSelected(itemIndex: Int, amount: Int)
 
 	fun onDialogClosed(closeType: CloseType)
 
